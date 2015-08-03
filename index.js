@@ -27,8 +27,7 @@ $('a').click(function(){
 // Fix for webview links
 var webview = document.querySelector('webview');
 webview.addEventListener('newwindow', function(e) {
-	//chrome.browser.openTab({ url: e.targetUrl});
-	console.log(webview.find("title"));
+	chrome.browser.openTab({ url: e.targetUrl});
 });
 webview.addEventListener('permissionrequest', function(e) {
 	if (e.permission === 'download') {
