@@ -114,3 +114,10 @@ h1 {
 	right: 10px;
 	font-size: 10px;
 }
+
+.content.settings .disclaimer {
+	position: absolute;
+	bottom: 5px;
+	left: 10px;
+	font-size: 10px;
+}
