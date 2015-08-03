@@ -1,4 +1,4 @@
-# Messenger
+# Messages
 
 A Chrome App to combine Facebook, Whatsapp, WeChat etc.
 

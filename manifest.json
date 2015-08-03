@@ -1,9 +1,13 @@
 {
   "manifest_version": 2,
-  "name": "Messenger",
+  "name": "Messages",
   "author": "Jeremy Chui",
   "version": "1.0",
   "permissions": ["http://fonts.googleapis.com/*","webview","browser"],
+  "icons": { "16": "assets/icon16.png",
+           "48": "assets/icon48.png",
+           "128": "assets/icon128.png",
+          "256": "assets/icon256.png" },
   "app": {
     "background": {
       "scripts": ["jquery.min.js","main.js"]

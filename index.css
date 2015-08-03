@@ -27,6 +27,9 @@ webview {
 .tab {
   float: left;
 }
+.tab.r {
+	float: right;
+}
 .tab label {
   background: #f5f5f5; 
   padding: 10px;
@@ -79,4 +82,11 @@ h1 {
 .content.settings a {
 	text-decoration: none;
 	color: #41adde;
+}
+
+.content.settings .version {
+	position: absolute;
+	bottom: 5px;
+	right: 10px;
+	font-size: 10px;
 }
