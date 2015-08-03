@@ -17,8 +17,20 @@ function updateWebviews() {
 onload = updateWebviews;
 window.onresize = updateWebviews;
 
+// Enable Href links
 $('a').click(function(){
   chrome.browser.openTab({
       url: $(this).attr('href')
     });
+});
+
+// Fix for webview links
+var webview = document.querySelector('webview');
+webview.addEventListener('newwindow', function(e) {
+	chrome.browser.openTab({ url: e.targetUrl});
+});
+webview.addEventListener('permissionrequest', function(e) {
+	if (e.permission === 'download') {
+    	e.request.allow();
+    }
 });

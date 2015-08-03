@@ -3,7 +3,7 @@
   "name": "Messenger",
   "author": "Jeremy Chui",
   "version": "1.0",
-  "permissions": ["http://localhost/","webview","browser"],
+  "permissions": ["http://fonts.googleapis.com/*","webview","browser"],
   "app": {
     "background": {
       "scripts": ["jquery.min.js","main.js"]
