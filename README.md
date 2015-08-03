@@ -10,6 +10,12 @@ First release, still new to writing Chrome Apps. So suggestions for feature requ
 ## Usage
 More notes coming soon.
 
+## Feature List
+ - Keyboard shortcuts
+ - Add / Remove social networks
+ - Notifications
+ - Notification bubbles
+
 ## Options
 
 ## Changelog
