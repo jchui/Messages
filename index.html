@@ -9,7 +9,7 @@
 	
 <div class="tabs">
     
-   <div class="tab">
+   <div class="tab" id="facebooktab">
        <input type="radio" id="tab-1" name="tab-group-1" checked>
        <label for="tab-1"><img src="assets/messenger.png" alt="messenger" width="20px"> Facebook</label>
        
@@ -18,7 +18,7 @@
        </div> 
    </div>
     
-   <div class="tab">
+   <div class="tab" id="whatsapptab">
        <input type="radio" id="tab-2" name="tab-group-1">
        <label for="tab-2"><img src="assets/whatsapp.png" alt="whatsapp" width="20px"> Whatsapp</label>
        
@@ -27,7 +27,7 @@
        </div> 
    </div>
     
-   <div class="tab">
+   <div class="tab" id="wechattab">
        <input type="radio" id="tab-3" name="tab-group-1">
        <label for="tab-3"><img src="assets/wechat.png" alt="wechat" width="20px"> WeChat</label>
      
@@ -36,7 +36,7 @@
        </div> 
    </div>
    
-   <div class="tab">
+   <div class="tab" id="skypetab">
        <input type="radio" id="tab-4" name="tab-group-1">
        <label for="tab-4"><img src="assets/skype.png" alt="skype" width="20px"> Skype</label>
      
@@ -53,8 +53,27 @@
        		<center>
        			<img src="assets/settings.png" alt="settings" width="50" height="50" style="padding-bottom: 5px;">
        			<h1>Customise Settings</h1>
-       			<p>Sorry, I'm still working on this section at the moment. Check out my github for any updates.</p>
-       			<p><a id="the_id" href="https://github.com/jchui/messages">github.com/jchui/messages</a></p>
+       			<p>Select which Instant Messaging networks you want to use.</p>
+       			
+       			<table>
+       				<tr>
+       					<td width="30px"><input name="whatsappchk" id="facebookchk" type="checkbox" checked="true"/></td>
+       					<td>Facebook</td>
+       				</tr>
+       				<tr>
+       					<td width="30px"><input name="whatsappchk" id="whatsappchk" type="checkbox" checked="true"/></td>
+       					<td>Whatsapp</td>
+       				</tr>
+       				<tr>
+       					<td width="30px"><input name="whatsappchk" id="wechatchk" type="checkbox" checked="true"/></td>
+       					<td>Wechat</td>
+       				</tr>
+       				<tr>
+       					<td width="30px"><input name="whatsappchk" id="skypechk" type="checkbox" checked="true"/></td>
+       					<td>Skype</td>
+       				</tr>
+       			</table>
+       			
        		</center>
        </div> 
    </div>
