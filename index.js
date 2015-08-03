@@ -16,3 +16,9 @@ function updateWebviews() {
 
 onload = updateWebviews;
 window.onresize = updateWebviews;
+
+$('a').click(function(){
+  chrome.browser.openTab({
+      url: $(this).attr('href')
+    });
+});

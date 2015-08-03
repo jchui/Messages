@@ -3,11 +3,10 @@
   "name": "Messenger",
   "author": "Jeremy Chui",
   "version": "1.0",
-  "permissions": ["webview","browser"],
+  "permissions": ["http://localhost/","webview","browser"],
   "app": {
     "background": {
-      "scripts": ["main.js"],
-	  "persistent": false
+      "scripts": ["jquery.min.js","main.js"]
     }
   }
 }
