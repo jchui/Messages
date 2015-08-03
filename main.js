@@ -8,7 +8,6 @@ chrome.app.runtime.onLaunched.addListener(function() {
     outerBounds: {
       width: 1000,
       height: 600
-    },
-    id: "test"
+    }
   });
 });
