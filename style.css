@@ -75,13 +75,37 @@ h1 {
 }
 
 .content.settings {
-	padding: 30px 20px;
+	padding: 30px 50px;
 	font-size: 14px;
+}
+
+.content.settings p {
+	line-height: 1.5;
 }
 
 .content.settings a {
 	text-decoration: none;
 	color: #41adde;
+}
+
+.content.settings table {
+	width: 100%;
+}
+
+.content.settings td {
+	vertical-align: top;
+}
+
+.content.settings ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: left;
+}
+
+.content.settings ul img {
+	position: relative;
+	top: 5px;
 }
 
 .content.settings .version {
