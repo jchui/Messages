@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>WebView sample</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+	
+<div class="tabs">
+    
+   <div class="tab">
+       <input type="radio" id="tab-1" name="tab-group-1" checked>
+       <label for="tab-1"><img src="assets/messenger.png" alt="messenger" width="20px"> Facebook</label>
+       
+       <div class="content">
+           <webview autosize="true" src="https://www.messenger.com"></webview>
+       </div> 
+   </div>
+    
+   <div class="tab">
+       <input type="radio" id="tab-2" name="tab-group-1">
+       <label for="tab-2"><img src="assets/whatsapp.png" alt="whatsapp" width="20px"> Whatsapp</label>
+       
+       <div class="content">
+           <webview autosize="true" src="https://web.whatsapp.com/"></webview>
+       </div> 
+   </div>
+    
+    <div class="tab">
+       <input type="radio" id="tab-3" name="tab-group-1">
+       <label for="tab-3"><img src="assets/wechat.png" alt="wechat" width="20px"> WeChat</label>
+     
+       <div class="content">
+           <webview autosize="true" src="https://web.wechat.com/"></webview>
+       </div> 
+   </div>
+   
+   <div class="tab">
+       <input type="radio" id="tab-4" name="tab-group-1">
+       <label for="tab-4"><img src="assets/settings.png" alt="settings" width="20px"> Settings</label>
+     
+       <div class="content settings">
+       		<center>
+       			<img src="assets/settings.png" alt="settings" width="40" height="40">
+       			<h1>Customise Messenger Settings</h1>
+       			<p>Sorry, I'm still working on this section at the moment. Check out my github for any updates.</p>
+       			<p><a href="https://github.com/jchui/messenger">github.com/jchui/messenger</a></p>
+       		</center>
+       </div> 
+   </div>
+    
+</div>
+	    	
+    <script src="index.js"></script>
+
+</body>
+</html>
