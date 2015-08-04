@@ -70,7 +70,7 @@ window.setInterval(function(){
 		}
 	});
 	
-	if (facebooknotif === true) {
+	if (whatsappnotif === true) {
 		$(".notif.whatsapp").css({"display":"inline-block"});
 	} else {
 		$(".notif.whatsapp").css({"display":"none"});
