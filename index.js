@@ -92,3 +92,24 @@ window.setInterval(function(){
 		$(".notif.fb").css({"display":"none"});
 	}
 }, 10000);
+
+// Whatsapp Notifications
+
+var whatsappnotif = false;
+
+window.setInterval(function(){
+	var webview = document.querySelector("#whatsapp-webview");
+	webview.executeScript({code:"document.title"}, function(title){
+		if( String(title) !== "Whatsapp Web") {
+			whatsappnotif = true;
+		} else {
+			whatsappnotif = false;
+		}
+	});
+	
+	if (facebooknotif === true) {
+		$(".notif.whatsapp").css({"display":"inline-block"});
+	} else {
+		$(".notif.whatsapp").css({"display":"none"});
+	}
+}, 10000);
