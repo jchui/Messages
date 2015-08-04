@@ -35,43 +35,6 @@ webview.addEventListener('permissionrequest', function(e) {
     }
 });
 
-// Settings
-
-$(document).ready(function() {
-
-    $('#facebookchk').change(function() {
-        if($(this).is(":checked")) {
-            $('#facebooktab').show(400);
-        } else {
-	        $('#facebooktab').hide(400);
-        }       
-    });
-    
-    $('#skypechk').change(function() {
-        if($(this).is(":checked")) {
-            $('#skypetab').show(400);
-        } else {
-	        $('#skypetab').hide(400);
-        }       
-    });
-    
-    $('#wechatchk').change(function() {
-        if($(this).is(":checked")) {
-            $('#wechattab').show(400);
-        } else {
-	        $('#wechattab').hide(400);
-        }       
-    });
-    
-    $('#whatsappchk').change(function() {
-        if($(this).is(":checked")) {
-            $('#whatsapptab').show(400);
-        } else {
-	        $('#whatsapptab').hide(400);
-        }       
-    });
-});
-
 // Facebook Notifications
 
 var facebooknotif = false;
@@ -113,3 +76,40 @@ window.setInterval(function(){
 		$(".notif.whatsapp").css({"display":"none"});
 	}
 }, 10000);
+
+// Settings
+
+$(document).ready(function() {
+
+    $('#facebookchk').change(function() {
+        if($(this).is(":checked")) {
+            $('#facebooktab').show(400);
+        } else {
+	        $('#facebooktab').hide(400);
+        }       
+    });
+    
+    $('#skypechk').change(function() {
+        if($(this).is(":checked")) {
+            $('#skypetab').show(400);
+        } else {
+	        $('#skypetab').hide(400);
+        }       
+    });
+    
+    $('#wechatchk').change(function() {
+        if($(this).is(":checked")) {
+            $('#wechattab').show(400);
+        } else {
+	        $('#wechattab').hide(400);
+        }       
+    });
+    
+    $('#whatsappchk').change(function() {
+        if($(this).is(":checked")) {
+            $('#whatsapptab').show(400);
+        } else {
+	        $('#whatsapptab').hide(400);
+        }       
+    });
+});
