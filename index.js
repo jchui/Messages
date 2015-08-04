@@ -62,8 +62,8 @@ var whatsappnotif = false;
 
 window.setInterval(function(){
 	var webview = document.querySelector("#whatsapp-webview");
-	webview.executeScript({code:"document.title"}, function(title){
-		if( String(title) !== "Whatsapp Web") {
+	webview.executeScript({code:"document.title"}, function(title2){
+		if( String(title2) !== "WhatsApp Web") {
 			whatsappnotif = true;
 		} else {
 			whatsappnotif = false;
