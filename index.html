@@ -11,39 +11,39 @@
     
    <div class="tab" id="facebooktab">
        <input type="radio" id="tab-1" name="tab-group-1" checked>
-       <label for="tab-1"><img src="assets/messenger.png" alt="messenger" width="20px"> Facebook</label>
+       <label for="tab-1"><img src="assets/messenger.png" alt="messenger" width="20px"> Facebook <div class="notif fb"></div></label>
        
        <div class="content">
-           <webview autosize="true" src="https://www.messenger.com"></webview>
+           <webview autosize="true" id="facebook-webview" src="https://www.messenger.com"></webview>
        </div> 
    </div>
     
    <div class="tab" id="whatsapptab">
        <input type="radio" id="tab-2" name="tab-group-1">
-       <label for="tab-2"><img src="assets/whatsapp.png" alt="whatsapp" width="20px"> Whatsapp</label>
+       <label for="tab-2"><img src="assets/whatsapp.png" alt="whatsapp" width="20px"> Whatsapp <div class="notif whatsapp"></div></label>
        
        <div class="content">
-           <webview autosize="true" src="https://web.whatsapp.com/"></webview>
+           <webview autosize="true" id="whatsapp-webview" src="https://web.whatsapp.com/"></webview>
        </div> 
    </div>
     
    <div class="tab" id="wechattab">
        <input type="radio" id="tab-3" name="tab-group-1">
-       <label for="tab-3"><img src="assets/wechat.png" alt="wechat" width="20px"> WeChat</label>
+       <label for="tab-3"><img src="assets/wechat.png" alt="wechat" width="20px"> WeChat <div class="notif wechat"></div></label>
      
        <div class="content">
-           <webview autosize="true" src="https://web.wechat.com/"></webview>
+           <webview autosize="true" id="wechat-webview" src="https://web.wechat.com/"></webview>
        </div> 
    </div>
    
-   <div class="tab" id="skypetab">
+   <!--<div class="tab" id="skypetab">
        <input type="radio" id="tab-4" name="tab-group-1">
-       <label for="tab-4"><img src="assets/skype.png" alt="skype" width="20px"> Skype</label>
+       <label for="tab-4"><img src="assets/skype.png" alt="skype" width="20px"> Skype <div class="notif"></div></label>
      
        <div class="content">
-           <webview autosize="true" src="https://web.skype.com/"></webview>
+           <webview autosize="true" id="skype-webview" src="https://web.skype.com/"></webview>
        </div> 
-   </div>
+   </div>-->
    
    <div class="tab r">
        <input type="radio" id="tab-5" name="tab-group-1">
@@ -68,10 +68,10 @@
        					<td width="30px"><input name="whatsappchk" id="wechatchk" type="checkbox" checked="true"/></td>
        					<td>Wechat</td>
        				</tr>
-       				<tr>
+       				<!--<tr>
        					<td width="30px"><input name="whatsappchk" id="skypechk" type="checkbox" checked="true"/></td>
        					<td>Skype</td>
-       				</tr>
+       				</tr>-->
        			</table>
        			
        		</center>

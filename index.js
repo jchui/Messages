@@ -71,3 +71,24 @@ $(document).ready(function() {
         }       
     });
 });
+
+// Facebook Notifications
+
+var facebooknotif = false;
+
+window.setInterval(function(){
+	var webview = document.querySelector("#facebook-webview");
+	webview.executeScript({code:"document.title"}, function(title){
+		if( String(title) !== "Messenger") {
+			facebooknotif = true;
+		} else {
+			facebooknotif = false;
+		}
+	});
+	
+	if (facebooknotif === true) {
+		$(".notif.fb").css({"display":"inline-block"});
+	} else {
+		$(".notif.fb").css({"display":"none"});
+	}
+}, 10000);

@@ -66,6 +66,16 @@ webview {
   z-index: 1;
 }
 
+.notif {
+	background-color: #ff4d4d;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	position: relative;
+	left: 2px;
+	top: 1px;
+	display: none;
+}
 
 h1 {
 	font-weight: 600;
