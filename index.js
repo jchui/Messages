@@ -24,17 +24,6 @@ $('a').click(function(){
     });
 });
 
-// Fix for webview links
-var webview = document.querySelector('webview');
-webview.addEventListener('newwindow', function(e) {
-	chrome.browser.openTab({ url: e.targetUrl});
-});
-webview.addEventListener('permissionrequest', function(e) {
-	if (e.permission === 'download') {
-    	e.request.allow();
-    }
-});
-
 // Facebook Notifications
 
 var facebooknotif = false;
@@ -76,6 +65,36 @@ window.setInterval(function(){
 		$(".notif.whatsapp").css({"display":"none"});
 	}
 }, 10000);
+
+// Fix for webview links
+var webview = document.querySelector('#facebook-webview');
+webview.addEventListener('newwindow', function(e) {
+	chrome.browser.openTab({ url: e.targetUrl});
+});
+webview.addEventListener('permissionrequest', function(e) {
+	if (e.permission === 'download') {
+    	e.request.allow();
+    }
+});
+var webview = document.querySelector('#whatsapp-webview');
+webview.addEventListener('newwindow', function(e) {
+	chrome.browser.openTab({ url: e.targetUrl});
+});
+webview.addEventListener('permissionrequest', function(e) {
+	if (e.permission === 'download') {
+    	e.request.allow();
+    }
+});
+var webview = document.querySelector('#wechat-webview');
+webview.addEventListener('newwindow', function(e) {
+	chrome.browser.openTab({ url: e.targetUrl});
+});
+webview.addEventListener('permissionrequest', function(e) {
+	if (e.permission === 'download') {
+    	e.request.allow();
+    }
+});
+
 
 // Settings
 
