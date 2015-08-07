@@ -43,7 +43,7 @@ window.setInterval(function(){
 	} else {
 		$(".notif.fb").css({"display":"none"});
 	}
-}, 10000);
+}, 5000);
 
 // Whatsapp Notifications
 
@@ -51,8 +51,8 @@ var whatsappnotif = false;
 
 window.setInterval(function(){
 	var webview = document.querySelector("#whatsapp-webview");
-	webview.executeScript({code:"document.title"}, function(title2){
-		if( String(title2) !== "WhatsApp Web") {
+	webview.executeScript({code:"document.title"}, function(title1){
+		if( String(title1) !== "WhatsApp Web") {
 			whatsappnotif = true;
 		} else {
 			whatsappnotif = false;
@@ -64,7 +64,28 @@ window.setInterval(function(){
 	} else {
 		$(".notif.whatsapp").css({"display":"none"});
 	}
-}, 10000);
+}, 5000);
+
+// WeChat Notifications
+
+var wechatnotif = false;
+
+window.setInterval(function(){
+	var webview = document.querySelector("#wechat-webview");
+	webview.executeScript({code:"document.title"}, function(title2){
+		if( String(title2) !== "Web WeChat") {
+			wechatnotif = true;
+		} else {
+			wechatnotif = false;
+		}
+	});
+	
+	if (wechatnotif === true) {
+		$(".notif.wechat").css({"display":"inline-block"});
+	} else {
+		$(".notif.wechat").css({"display":"none"});
+	}
+}, 5000);
 
 // Fix for webview links
 var webview = document.querySelector('#facebook-webview');

@@ -28,15 +28,7 @@ Special thanks to the following people who helped me out with this project so fa
 
 ### Installation
 
-This isn't a packaged app yet, so for now:
-
- - Download the Zip repository
- - Unzip it somewhere
- - Go to Chrome and open up chrome://extensions/
- - Make sure "Developer Mode" is on (Top Right corner)
- - "Load Unpacked Extension"
- - Navigate to where you unzipped the repo and press Select.
- - Press "Launch" and you're done!
+Find it here: [Chrome Web Store](https://chrome.google.com/webstore/detail/messages/jcioaokidkjbdnffgnonfpmnjcfeiacp) !
 
 ### Screenshots
 
