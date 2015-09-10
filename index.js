@@ -196,7 +196,7 @@ $(document).ready(function() {
         }       
     });
     
-   $('#hangoutsappchk').change(function() {
+   $('#hangoutschk').change(function() {
         if($(this).is(":checked")) {
             $('#hangoutstab').show(400);
         } else {
