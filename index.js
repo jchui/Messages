@@ -12,7 +12,7 @@ function updateWebviews() {
   webview.style.height = document.documentElement.clientHeight - 34 + "px";
   webview.style.width = document.documentElement.clientWidth + "px";
   
-};
+}
 
 onload = updateWebviews;
 window.onresize = updateWebviews;
@@ -87,6 +87,49 @@ window.setInterval(function(){
 	}
 }, 5000);
 
+// Hangouts Notifications
+
+var hangoutsnotif = false;
+
+window.setInterval(function(){
+	var webview = document.querySelector("#hangouts-webview");
+	webview.executeScript({code:"document.title"}, function(title2){
+		if( String(title2) !== "Google Hangouts") {
+			skypenotif = true;
+		} else {
+			skypenotif = false;
+		}
+	});
+	
+	if (hangoutsnotif === true) {
+		$(".notif.hangouts").css({"display":"inline-block"});
+	} else {
+		$(".notif.hangouts").css({"display":"none"});
+	}
+}, 5000);
+
+// Skype Notifications
+
+var skypenotif = false;
+
+window.setInterval(function(){
+	var webview = document.querySelector("#skype-webview");
+	webview.executeScript({code:"document.title"}, function(title2){
+		if( String(title2) !== "Skype") {
+			skypenotif = true;
+		} else {
+			skypenotif = false;
+		}
+	});
+	
+	if (skypenotif === true) {
+		$(".notif.skype").css({"display":"inline-block"});
+	} else {
+		$(".notif.skype").css({"display":"none"});
+	}
+}, 5000);
+
+
 // Fix for webview links
 var webview = document.querySelector('#facebook-webview');
 webview.addEventListener('newwindow', function(e) {
@@ -150,6 +193,14 @@ $(document).ready(function() {
             $('#whatsapptab').show(400);
         } else {
 	        $('#whatsapptab').hide(400);
+        }       
+    });
+    
+   $('#hangoutsappchk').change(function() {
+        if($(this).is(":checked")) {
+            $('#hangoutstab').show(400);
+        } else {
+	        $('#hangoutstab').hide(400);
         }       
     });
 });
