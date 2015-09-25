@@ -1,6 +1,6 @@
 # Messages
 
-Messages is a chrome app that combines multiple instant messaging networks into one.
+Messages is a Chrome app which combines multiple instant messaging networks into one.
 
 This is not an official product by any of the messaging companies in this app. This was created as a free and open source project. 
 
@@ -9,11 +9,13 @@ Still quite new to Chrome Apps. A lot of the stuff like notifications is done th
 
 Currently supports the following IM networks:
 
-  - Whatsapp
   - Facebook Messenger
+  - Hangouts
+  - Skype
+  - Whatsapp
   - WeChat
 
-If you want any more IM networks being added, just submit an Issue and I'll look into it later. Make sure that a web version of that IM is available.
+If you want any more IM networks being added, just submit an issue and it may be added; however, ensure a web version of the instant messenger is available.
 
 ### Version
 1.0.0
@@ -24,7 +26,6 @@ Special thanks to the following people who helped me out with this project so fa
 
  - [mansimransingh] [github.com/mansimransingh](github.com/mansimransingh)
  - [sina] [sina.sh](http://sina.sh)
-
 
 ### Installation
 
